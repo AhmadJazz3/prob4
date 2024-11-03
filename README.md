@@ -69,17 +69,17 @@ for epoch in range(epochs):
 After training, evaluate the model on the test data and visualize performance metrics:
 
 
-with torch.no_grad():
+    with torch.no_grad():
     
-    model.eval()
-    
-    outputs = model(X_test)
-    
-    _, predicted = torch.max(outputs, 1)
-    
-    accuracy = (predicted == y_test).sum().item() / y_test.size(0)
-    
-    print(f"Test Accuracy: {accuracy * 100:.2f}%")
+        model.eval()
+        
+        outputs = model(X_test)
+        
+        _, predicted = torch.max(outputs, 1)
+        
+        accuracy = (predicted == y_test).sum().item() / y_test.size(0)
+        
+        print(f"Test Accuracy: {accuracy * 100:.2f}%")
 
 Additional evaluation includes a confusion matrix and a classification report, which can be visualized using matplotlib and seaborn in demo.py.
 
