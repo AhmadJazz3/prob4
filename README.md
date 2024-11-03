@@ -13,8 +13,8 @@ This project implements a multi-layer feed-forward neural network using PyTorch.
 To run this project, clone the repository and install the necessary packages:
 
 ```bash
-git clone <repository_url>
-cd my_neural_network_project
+git clone [<repository_url>](https://github.com/AhmadJazz3/prob4)
+cd prob4
 pip install -r requirements.txt
 
 ````
